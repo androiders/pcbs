@@ -1,2 +1,2 @@
 # pcbs
-Rpo for pcb layouts, gerber and gcode files
+Repo for pcb layouts, gerber and gcode files
