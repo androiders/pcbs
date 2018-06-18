@@ -1,9 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.7)
+(kicad_pcb (version 4) (host pcbnew 4.0.2+dfsg1-stable)
 
   (general
     (links 10)
     (no_connects 0)
-    (area 138.037142 97.13 166.762858 116.335)
+    (area 137.962142 96.98 166.837858 116.235)
     (thickness 1.6)
     (drawings 3)
     (tracks 14)
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.25)
+    (last_trace_width 0.5)
     (trace_clearance 0.1)
     (zone_clearance 0.15)
     (zone_45_only no)
@@ -103,7 +103,7 @@
 
   (net_class Default "This is the default net class."
     (clearance 0.1)
-    (trace_width 0.25)
+    (trace_width 0.5)
     (via_dia 0.6)
     (via_drill 0.4)
     (uvia_dia 0.3)
@@ -297,19 +297,19 @@
   (gr_line (start 142.24 99.695) (end 162.56 99.695) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 142.24 115.57) (end 142.24 99.695) (angle 90) (layer Edge.Cuts) (width 0.15))
 
-  (segment (start 144.78 113.03) (end 148.59 113.03) (width 0.25) (layer F.Cu) (net 1) (status C00000))
-  (segment (start 148.59 113.03) (end 153.035 113.03) (width 0.25) (layer F.Cu) (net 1) (tstamp 5B279BCC) (status 400000))
-  (segment (start 153.035 113.03) (end 153.67 112.395) (width 0.25) (layer F.Cu) (net 1) (tstamp 5B279BCE))
-  (segment (start 153.67 112.395) (end 153.67 100.965) (width 0.25) (layer F.Cu) (net 1) (tstamp 5B279BD0) (status 800000))
-  (segment (start 144.78 107.95) (end 148.59 107.95) (width 0.25) (layer F.Cu) (net 2) (status C00000))
-  (segment (start 148.59 107.95) (end 150.495 107.95) (width 0.25) (layer F.Cu) (net 2) (tstamp 5B279BE1) (status 400000))
-  (segment (start 150.495 107.95) (end 151.13 107.315) (width 0.25) (layer F.Cu) (net 2) (tstamp 5B279BE2))
-  (segment (start 151.13 107.315) (end 151.13 100.965) (width 0.25) (layer F.Cu) (net 2) (tstamp 5B279BE7) (status 800000))
-  (segment (start 160.02 113.03) (end 156.21 113.03) (width 0.25) (layer F.Cu) (net 3) (status C00000))
-  (segment (start 156.21 110.49) (end 160.02 110.49) (width 0.25) (layer F.Cu) (net 4) (status C00000))
-  (segment (start 160.02 107.95) (end 156.21 107.95) (width 0.25) (layer F.Cu) (net 5) (status C00000))
-  (segment (start 156.21 105.41) (end 160.02 105.41) (width 0.25) (layer F.Cu) (net 6) (status C00000))
-  (segment (start 144.78 105.41) (end 148.59 105.41) (width 0.25) (layer F.Cu) (net 7) (status C00000))
-  (segment (start 144.78 110.49) (end 148.59 110.49) (width 0.25) (layer F.Cu) (net 8) (status C00000))
+  (segment (start 144.78 113.03) (end 148.59 113.03) (width 0.5) (layer B.Cu) (net 1) (status C00000))
+  (segment (start 148.59 113.03) (end 151.765 113.03) (width 0.5) (layer B.Cu) (net 1) (tstamp 5B27FBB1) (status 400000))
+  (segment (start 151.765 113.03) (end 153.67 111.125) (width 0.5) (layer B.Cu) (net 1) (tstamp 5B27FBB3))
+  (segment (start 153.67 111.125) (end 153.67 100.965) (width 0.5) (layer B.Cu) (net 1) (tstamp 5B27FBB7) (status 800000))
+  (segment (start 144.78 107.95) (end 148.59 107.95) (width 0.5) (layer B.Cu) (net 2))
+  (segment (start 148.59 107.95) (end 150.495 107.95) (width 0.5) (layer B.Cu) (net 2) (tstamp 5B27FB8B))
+  (segment (start 150.495 107.95) (end 151.13 107.315) (width 0.5) (layer B.Cu) (net 2) (tstamp 5B27FB8C))
+  (segment (start 151.13 107.315) (end 151.13 100.965) (width 0.5) (layer B.Cu) (net 2) (tstamp 5B27FB94))
+  (segment (start 156.21 113.03) (end 160.02 113.03) (width 0.5) (layer B.Cu) (net 3) (status C00000))
+  (segment (start 156.21 110.49) (end 160.02 110.49) (width 0.5) (layer B.Cu) (net 4) (status C00000))
+  (segment (start 156.21 107.95) (end 160.02 107.95) (width 0.5) (layer B.Cu) (net 5) (status C00000))
+  (segment (start 156.21 105.41) (end 160.02 105.41) (width 0.5) (layer B.Cu) (net 6) (status C00000))
+  (segment (start 144.78 105.41) (end 148.59 105.41) (width 0.5) (layer B.Cu) (net 7) (status C00000))
+  (segment (start 144.78 110.49) (end 148.59 110.49) (width 0.5) (layer B.Cu) (net 8) (status C00000))
 
 )
