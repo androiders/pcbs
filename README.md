@@ -25,4 +25,6 @@ Drilling:
 * spindle speed: 10000 rpm
 
 
+FlatCam defaults:
 
+* put it in ~/.FlatCAM/defaults.json
