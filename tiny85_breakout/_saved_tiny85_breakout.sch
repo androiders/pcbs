@@ -1,9 +1,6 @@
 EESchema Schematic File Version 2
 LIBS:power
 LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
 LIBS:transistors
 LIBS:conn
 LIBS:linear
@@ -46,48 +43,15 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ATTINY85-20PU U1
-U 1 1 5B276E46
-P 5650 3150
-F 0 "U1" H 4500 3550 50  0000 C CNN
-F 1 "ATTINY85-20PU" H 6650 2750 50  0000 C CNN
-F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 6650 3150 50  0001 C CIN
-F 3 "" H 5650 3150 50  0001 C CNN
-	1    5650 3150
-	1    0    0    -1  
-$EndComp
-$Comp
 L LED D1
 U 1 1 5B276E9B
-P 3800 3250
-F 0 "D1" H 3800 3350 50  0000 C CNN
-F 1 "LED" H 3800 3150 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm" H 3800 3250 50  0001 C CNN
-F 3 "" H 3800 3250 50  0001 C CNN
-	1    3800 3250
+P 3800 3300
+F 0 "D1" H 3800 3400 50  0000 C CNN
+F 1 "LED" H 3800 3200 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 3800 3300 50  0001 C CNN
+F 3 "" H 3800 3300 50  0001 C CNN
+	1    3800 3300
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Conn_01x04_Male J1
-U 1 1 5B276F9A
-P 3600 2250
-F 0 "J1" H 3600 2450 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 3600 1950 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 3600 2250 50  0001 C CNN
-F 3 "" H 3600 2250 50  0001 C CNN
-	1    3600 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_01x04_Male J2
-U 1 1 5B277001
-P 3600 3850
-F 0 "J2" H 3600 4050 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 3600 3550 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 3600 3850 50  0001 C CNN
-F 3 "" H 3600 3850 50  0001 C CNN
-	1    3600 3850
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4300 3400 4050 3400
@@ -101,8 +65,6 @@ Wire Wire Line
 	4150 3100 4150 3850
 Wire Wire Line
 	4150 3850 3800 3850
-Wire Wire Line
-	4150 3100 3800 3100
 Connection ~ 4150 3200
 Wire Wire Line
 	4300 3300 4300 3950
@@ -112,8 +74,6 @@ Wire Wire Line
 	7000 3400 7000 4050
 Wire Wire Line
 	7000 4050 3800 4050
-Wire Wire Line
-	3800 3400 3800 3650
 Wire Wire Line
 	3800 3650 4500 3650
 Wire Wire Line
@@ -173,4 +133,41 @@ $EndComp
 Wire Wire Line
 	6750 4300 6750 4050
 Connection ~ 6750 4050
+$Comp
+L ATTINY85-P IC1
+U 1 1 5B2A767D
+P 5650 3150
+F 0 "IC1" H 4500 3550 50  0000 C CNN
+F 1 "ATTINY85-P" H 6650 2750 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 6650 3150 50  0000 C CIN
+F 3 "" H 5650 3150 50  0000 C CNN
+	1    5650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P1
+U 1 1 5B2A76A8
+P 3600 2300
+F 0 "P1" H 3600 2550 50  0000 C CNN
+F 1 "CONN_01X04" V 3700 2300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 3600 2300 50  0001 C CNN
+F 3 "" H 3600 2300 50  0000 C CNN
+	1    3600 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X04 P2
+U 1 1 5B2A7764
+P 3600 3900
+F 0 "P2" H 3600 4150 50  0000 C CNN
+F 1 "CONN_01X04" V 3700 3900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 3600 3900 50  0001 C CNN
+F 3 "" H 3600 3900 50  0000 C CNN
+	1    3600 3900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4150 3100 3800 3100
+Wire Wire Line
+	3800 3650 3800 3500
 $EndSCHEMATC

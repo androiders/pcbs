@@ -1,9 +1,9 @@
 EESchema Schematic File Version 2
+LIBS:signalbuffer_single-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
 LIBS:relays
-LIBS:motors
 LIBS:transistors
 LIBS:conn
 LIBS:linear
@@ -31,6 +31,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:signalbuffer_single-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -70,7 +71,7 @@ $EndComp
 Wire Wire Line
 	5650 3900 6050 3900
 Wire Wire Line
-	6050 3900 6050 3450
+	6050 3450 6050 4150
 Connection ~ 6050 3450
 Wire Wire Line
 	5350 3900 5300 3900
@@ -235,7 +236,7 @@ F 3 "" H 7100 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM318N U1
+L LM318N-RESCUE-signalbuffer_single U1
 U 1 1 5AA8F957
 P 5650 3450
 F 0 "U1" H 5800 3600 50  0000 L CNN
@@ -299,9 +300,26 @@ Wire Wire Line
 Wire Wire Line
 	4800 3900 5000 3900
 Wire Wire Line
+	5350 3550 5350 4150
+$Comp
+L C_Small C1
+U 1 1 5B2FE5DA
+P 5500 4150
+F 0 "C1" H 5510 4220 50  0000 L CNN
+F 1 "C_Small" H 5510 4070 50  0000 L CNN
+F 2 "" H 5500 4150 50  0000 C CNN
+F 3 "" H 5500 4150 50  0000 C CNN
+	1    5500 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 4150 5400 4150
+Connection ~ 5350 3900
+Wire Wire Line
+	6050 4150 5600 4150
+Connection ~ 6050 3900
+Wire Wire Line
 	6750 3850 6750 3750
 Wire Wire Line
 	6750 3750 6900 3750
-Wire Wire Line
-	5350 3550 5350 3900
 $EndSCHEMATC
