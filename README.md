@@ -12,19 +12,22 @@ Repo for pcb layouts, gerber and gcode files
 
 ## FlatCam
 
-### Isolation milling:
-* Current isolation mill depth to test: 0.05 mm
-* Current feedrate on isolation milling to test: 60 mm/s
-* spindle speed 10000 rpm
+### geometry generation
+* mirror around y axis for both geometry and Drilling
+* Edit drill files if necessary for fewer drill sizes
 
-* use 0.4 mm tool width on geometry generation to get a small width from the trace edges.
-* use 0.1 mm tool width on cnc generation 
+### Isolation milling:
+* Current isolation mill depth to test: 0.2 mm
+* Current feedrate on isolation milling to test: 80 mm/s
+* spindle speed 12000 rpm
+
+* use 0.1 mm tool width on cnc generation
 
 ### Drilling:
-* Current drill feedrate to test 20 mm/s
-* spindle speed: 10000 rpm
+* Current drill plunge rate to test 20 mm/s
+* spindle speed: 12000 rpm
 
 
 ### FlatCam defaults:
 
-* put it in ~/.FlatCAM/defaults.json
+* put a link in ~/.FlatCAM/defaults.json
