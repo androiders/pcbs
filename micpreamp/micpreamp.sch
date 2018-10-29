@@ -1,0 +1,402 @@
+EESchema Schematic File Version 4
+LIBS:micpreamp-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:LM358 U2
+U 1 1 5BD5C363
+P 4650 3750
+F 0 "U2" H 4650 4117 50  0000 C CNN
+F 1 "LM358" H 4650 4026 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 4650 3750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 4650 3750 50  0001 C CNN
+	1    4650 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U2
+U 3 1 5BD5C3D7
+P 4600 2600
+F 0 "U2" H 4558 2646 50  0000 L CNN
+F 1 "LM358" H 4558 2555 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 4600 2600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 4600 2600 50  0001 C CNN
+	3    4600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5BD5C5C2
+P 3850 4100
+F 0 "R3" H 3920 4146 50  0000 L CNN
+F 1 "56K" H 3920 4055 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3780 4100 50  0001 C CNN
+F 3 "~" H 3850 4100 50  0001 C CNN
+	1    3850 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BD5C66B
+P 3850 3350
+F 0 "R2" H 3920 3396 50  0000 L CNN
+F 1 "56K" H 3920 3305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3780 3350 50  0001 C CNN
+F 3 "~" H 3850 3350 50  0001 C CNN
+	1    3850 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5BD5C6E0
+P 5250 3750
+F 0 "R4" V 5457 3750 50  0000 C CNN
+F 1 "47" V 5366 3750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5180 3750 50  0001 C CNN
+F 3 "~" H 5250 3750 50  0001 C CNN
+	1    5250 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5BD5C73A
+P 3400 3350
+F 0 "R1" H 3470 3396 50  0000 L CNN
+F 1 "2K7" H 3470 3305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3330 3350 50  0001 C CNN
+F 3 "~" H 3400 3350 50  0001 C CNN
+	1    3400 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM1117-3.3 U1
+U 1 1 5BD5CA9C
+P 2850 2300
+F 0 "U1" H 2850 2542 50  0000 C CNN
+F 1 "3.3 reg" H 2850 2451 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2850 2300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 2850 2300 50  0001 C CNN
+	1    2850 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5BD5DE3E
+P 2250 2300
+F 0 "#FLG01" H 2250 2375 50  0001 C CNN
+F 1 "PWR_FLAG" H 2250 2474 50  0000 C CNN
+F 2 "" H 2250 2300 50  0001 C CNN
+F 3 "~" H 2250 2300 50  0001 C CNN
+	1    2250 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5BD5E84F
+P 3550 3850
+F 0 "C2" V 3298 3850 50  0000 C CNN
+F 1 "2.2uF" V 3389 3850 50  0000 C CNN
+F 2 "Capacitor_THT:C_Radial_D5.0mm_H5.0mm_P2.00mm" H 3588 3700 50  0001 C CNN
+F 3 "~" H 3550 3850 50  0001 C CNN
+	1    3550 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5BD5E904
+P 4700 4400
+F 0 "C4" V 4448 4400 50  0000 C CNN
+F 1 "15pF" V 4539 4400 50  0000 C CNN
+F 2 "Capacitor_THT:C_Radial_D5.0mm_H5.0mm_P2.00mm" H 4738 4250 50  0001 C CNN
+F 3 "~" H 4700 4400 50  0001 C CNN
+	1    4700 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5BD5E999
+P 3400 2450
+F 0 "C1" H 3515 2496 50  0000 L CNN
+F 1 "15pF" H 3515 2405 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D5.0mm_H5.0mm_P2.00mm" H 3438 2300 50  0001 C CNN
+F 3 "~" H 3400 2450 50  0001 C CNN
+	1    3400 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5BD5EEAB
+P 4700 4000
+F 0 "RV1" V 4493 4000 50  0000 C CNN
+F 1 "100K" V 4584 4000 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 4700 4000 50  0001 C CNN
+F 3 "~" H 4700 4000 50  0001 C CNN
+	1    4700 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 2300 3400 2300
+Wire Wire Line
+	3400 2300 3850 2300
+Connection ~ 3400 2300
+Wire Wire Line
+	3400 2600 2850 2600
+Wire Wire Line
+	2250 2300 2550 2300
+Wire Wire Line
+	3400 3200 3400 2600
+Connection ~ 3400 2600
+Wire Wire Line
+	3400 3850 3400 3500
+Wire Wire Line
+	3700 3850 4300 3850
+Wire Wire Line
+	3850 3950 3850 3650
+Wire Wire Line
+	4350 3650 3850 3650
+Connection ~ 3850 3650
+Wire Wire Line
+	3850 3650 3850 3500
+Wire Wire Line
+	3850 3200 3850 2300
+Connection ~ 3850 2300
+Wire Wire Line
+	3850 2300 4500 2300
+Wire Wire Line
+	3850 4250 3850 4300
+$Comp
+L Device:C C3
+U 1 1 5BD6036A
+P 3600 4150
+F 0 "C3" H 3485 4104 50  0000 R CNN
+F 1 "20pF" H 3485 4195 50  0000 R CNN
+F 2 "Capacitor_THT:C_Radial_D5.0mm_H5.0mm_P2.00mm" H 3638 4000 50  0001 C CNN
+F 3 "~" H 3600 4150 50  0001 C CNN
+	1    3600 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3600 4000 3700 4000
+Wire Wire Line
+	3700 4000 3700 3950
+Wire Wire Line
+	3700 3950 3850 3950
+Connection ~ 3850 3950
+Wire Wire Line
+	3600 4300 3850 4300
+Wire Wire Line
+	4550 4400 4300 4400
+Wire Wire Line
+	4300 4400 4300 4150
+Connection ~ 4300 3850
+Wire Wire Line
+	4300 3850 4350 3850
+Wire Wire Line
+	4700 4150 4300 4150
+Connection ~ 4300 4150
+Wire Wire Line
+	4300 4150 4300 3850
+Wire Wire Line
+	4850 4000 4950 4000
+Wire Wire Line
+	4950 4000 4950 3750
+Wire Wire Line
+	4850 4400 4950 4400
+Wire Wire Line
+	4950 4400 4950 4000
+Connection ~ 4950 4000
+Wire Wire Line
+	4950 3750 5100 3750
+Connection ~ 4950 3750
+$Comp
+L Device:R R5
+U 1 1 5BD6220D
+P 5750 4000
+F 0 "R5" H 5820 4046 50  0000 L CNN
+F 1 "10K" H 5820 3955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5680 4000 50  0001 C CNN
+F 3 "~" H 5750 4000 50  0001 C CNN
+	1    5750 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3750 5750 3850
+$Comp
+L power:GND #PWR06
+U 1 1 5BD6322B
+P 6050 4250
+F 0 "#PWR06" H 6050 4000 50  0001 C CNN
+F 1 "GND" H 6055 4077 50  0000 C CNN
+F 2 "" H 6050 4250 50  0001 C CNN
+F 3 "" H 6050 4250 50  0001 C CNN
+	1    6050 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5BD6524E
+P 3850 4450
+F 0 "#PWR0102" H 3850 4200 50  0001 C CNN
+F 1 "GND" H 3855 4277 50  0000 C CNN
+F 2 "" H 3850 4450 50  0001 C CNN
+F 3 "" H 3850 4450 50  0001 C CNN
+	1    3850 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 4450 3850 4300
+Connection ~ 3850 4300
+$Comp
+L power:GND #PWR0103
+U 1 1 5BD662A5
+P 3150 3500
+F 0 "#PWR0103" H 3150 3250 50  0001 C CNN
+F 1 "GND" H 3155 3327 50  0000 C CNN
+F 2 "" H 3150 3500 50  0001 C CNN
+F 3 "" H 3150 3500 50  0001 C CNN
+	1    3150 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3450 3150 3500
+$Comp
+L Connector:AudioJack3_Ground_Switch J1
+U 1 1 5BD688BF
+P 2500 3550
+F 0 "J1" H 2504 3892 50  0000 C CNN
+F 1 "Input" H 2504 3801 50  0000 C CNN
+F 2 "Connector_Audio:StereoJack_3.5mm_Switch_Ledino_KB3SPRS_Horizontal" H 2500 3550 50  0001 C CNN
+F 3 "~" H 2500 3550 50  0001 C CNN
+	1    2500 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 3450 3150 3450
+Wire Wire Line
+	2700 3750 2850 3750
+Wire Wire Line
+	2850 3750 2850 3850
+Wire Wire Line
+	2850 3850 3400 3850
+Connection ~ 3400 3850
+$Comp
+L Connector:AudioJack3_Ground_Switch J2
+U 1 1 5BD6A224
+P 6550 3950
+F 0 "J2" H 6317 3829 50  0000 R CNN
+F 1 "Output" H 6317 3920 50  0000 R CNN
+F 2 "Connector_Audio:StereoJack_3.5mm_Switch_Ledino_KB3SPRS_Horizontal" H 6550 3950 50  0001 C CNN
+F 3 "~" H 6550 3950 50  0001 C CNN
+	1    6550 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6350 4050 6050 4050
+Wire Wire Line
+	6050 4050 6050 4250
+$Comp
+L power:GND #PWR0101
+U 1 1 5BD6CE3C
+P 2850 2850
+F 0 "#PWR0101" H 2850 2600 50  0001 C CNN
+F 1 "GND" H 2855 2677 50  0000 C CNN
+F 2 "" H 2850 2850 50  0001 C CNN
+F 3 "" H 2850 2850 50  0001 C CNN
+	1    2850 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2850 2850 2750
+Connection ~ 2850 2600
+$Comp
+L power:GND #PWR0104
+U 1 1 5BD6D58E
+P 5750 4450
+F 0 "#PWR0104" H 5750 4200 50  0001 C CNN
+F 1 "GND" H 5755 4277 50  0000 C CNN
+F 2 "" H 5750 4450 50  0001 C CNN
+F 3 "" H 5750 4450 50  0001 C CNN
+	1    5750 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4450 5750 4150
+Wire Wire Line
+	4500 2900 3000 2900
+Wire Wire Line
+	3000 2900 3000 2750
+Wire Wire Line
+	3000 2750 2850 2750
+Connection ~ 2850 2750
+Wire Wire Line
+	2850 2750 2850 2600
+$Comp
+L power:GNDPWR #PWR0105
+U 1 1 5BD6F87B
+P 2250 2750
+F 0 "#PWR0105" H 2250 2550 50  0001 C CNN
+F 1 "GNDPWR" H 2254 2596 50  0000 C CNN
+F 2 "" H 2250 2700 50  0001 C CNN
+F 3 "" H 2250 2700 50  0001 C CNN
+	1    2250 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2750 2850 2750
+$Comp
+L Connector:Conn_01x01_Male J3
+U 1 1 5BD705D1
+P 1950 2300
+F 0 "J3" H 2056 2478 50  0000 C CNN
+F 1 "Vdd" H 2056 2387 50  0000 C CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 1950 2300 50  0001 C CNN
+F 3 "~" H 1950 2300 50  0001 C CNN
+	1    1950 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J4
+U 1 1 5BD7063F
+P 1950 2750
+F 0 "J4" H 2056 2928 50  0000 C CNN
+F 1 "Gnd" H 2056 2837 50  0000 C CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 1950 2750 50  0001 C CNN
+F 3 "~" H 1950 2750 50  0001 C CNN
+	1    1950 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2300 2250 2300
+Connection ~ 2250 2300
+Wire Wire Line
+	2150 2750 2250 2750
+Connection ~ 2250 2750
+$Comp
+L Device:C C5
+U 1 1 5BD5E7A0
+P 5600 3750
+F 0 "C5" V 5348 3750 50  0000 C CNN
+F 1 "2.2uF" V 5439 3750 50  0000 C CNN
+F 2 "Capacitor_THT:C_Radial_D5.0mm_H5.0mm_P2.00mm" H 5638 3600 50  0001 C CNN
+F 3 "~" H 5600 3750 50  0001 C CNN
+	1    5600 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 3750 5450 3750
+Wire Wire Line
+	5750 3750 6350 3750
+Connection ~ 5750 3750
+$EndSCHEMATC
