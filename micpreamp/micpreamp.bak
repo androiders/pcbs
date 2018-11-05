@@ -103,17 +103,6 @@ F 3 "~" H 2250 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C5
-U 1 1 5BD5E7A0
-P 5600 3750
-F 0 "C5" V 5348 3750 50  0000 C CNN
-F 1 "2.2uF" V 5439 3750 50  0000 C CNN
-F 2 "Capacitor_THT:C_Radial_D5.0mm_H5.0mm_P2.00mm" H 5638 3600 50  0001 C CNN
-F 3 "~" H 5600 3750 50  0001 C CNN
-	1    5600 3750
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:C C2
 U 1 1 5BD5E84F
 P 3550 3850
@@ -242,8 +231,6 @@ F 3 "~" H 5750 4000 50  0001 C CNN
 	1    5750 4000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5400 3750 5450 3750
 Wire Wire Line
 	5750 3750 5750 3850
 $Comp
@@ -396,6 +383,19 @@ Connection ~ 2250 2300
 Wire Wire Line
 	2150 2750 2250 2750
 Connection ~ 2250 2750
+$Comp
+L Device:C C5
+U 1 1 5BD5E7A0
+P 5600 3750
+F 0 "C5" V 5348 3750 50  0000 C CNN
+F 1 "2.2uF" V 5439 3750 50  0000 C CNN
+F 2 "Capacitor_THT:C_Radial_D5.0mm_H5.0mm_P2.00mm" H 5638 3600 50  0001 C CNN
+F 3 "~" H 5600 3750 50  0001 C CNN
+	1    5600 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 3750 5450 3750
 Wire Wire Line
 	5750 3750 6350 3750
 Connection ~ 5750 3750

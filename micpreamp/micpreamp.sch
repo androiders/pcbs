@@ -149,15 +149,12 @@ $EndComp
 Wire Wire Line
 	3150 2300 3400 2300
 Wire Wire Line
-	3400 2300 3850 2300
+	3400 2300 3650 2300
 Connection ~ 3400 2300
 Wire Wire Line
 	3400 2600 2850 2600
 Wire Wire Line
 	2250 2300 2550 2300
-Wire Wire Line
-	3400 3200 3400 2600
-Connection ~ 3400 2600
 Wire Wire Line
 	3400 3850 3400 3500
 Wire Wire Line
@@ -399,4 +396,11 @@ Wire Wire Line
 Wire Wire Line
 	5750 3750 6350 3750
 Connection ~ 5750 3750
+Wire Wire Line
+	3400 3200 3650 3200
+Wire Wire Line
+	3650 3200 3650 2300
+Connection ~ 3650 2300
+Wire Wire Line
+	3650 2300 3850 2300
 $EndSCHEMATC
