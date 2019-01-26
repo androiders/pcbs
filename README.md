@@ -7,9 +7,10 @@ Repo for pcb layouts, gerber and gcode files
 
 ### PCB layout (ki-kad)
 
-* 0.5 mm traces seems to be fine. Use wider if possible
+* Use as wide traces as possible. 1mm preffered.
 * Dont use "filled areas" if possible. It does not make good geometry in flatcam
 * Don't forget to set origin marker
+* Export gerber: use auxiliary axis
 
 
 ## FlatCam
@@ -19,16 +20,24 @@ Repo for pcb layouts, gerber and gcode files
 * Edit drill files if necessary for fewer drill sizes
 
 ### Isolation milling:
-* Current isolation mill depth to test: 0.2 mm
-* Current feedrate on isolation milling to test: 80 mm/s
+* Current isolation mill depth to test: 0.18 mm
+* Current feedrate on isolation milling to test: 60 mm/s
 * spindle speed 12000 rpm
 
-* use 0.1 mm tool width on cnc generation
+* use 0.2 mm tool width on cnc generation
+* 2 passes with 0.1 overlap
+
+## bCNC
+
+### Probe
+* Fastfeed: 120
+* Probefeed: 25
+* Probe points: 4/cm (in each direction)
 
 ### Drilling:
 * Current drill plunge rate to test 20 mm/s
 * spindle speed: 12000 rpm
-
+* Drill depth: 1.6
 
 ### FlatCam defaults:
 
