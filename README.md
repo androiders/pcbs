@@ -20,13 +20,18 @@ Repo for pcb layouts, gerber and gcode files
 * Edit drill files if necessary for fewer drill sizes
 * TODO: test double sided layout by mirroring around center axis!
 
-### Isolation genration:
-* Current isolation mill depth to test: 0.18 mm
+### Isolation generation:
+* Current isolation mill depth to test: 0.15 mm
 * Current feedrate on isolation milling to test: 60 mm/s
 * spindle speed 12000 rpm
 
 * use 0.2 mm tool width on cnc generation
 * 2 passes with 0.1 overlap
+
+### Cutout generation
+* Current cutout mill depth to test: 1.5 mm
+* Current feedrate on cutout milling to test: 30 mm/s
+* spindle speed 12000 rpm
 
 ### FlatCam defaults:
 * put a link in ~/.FlatCAM/defaults.json
