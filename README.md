@@ -29,8 +29,8 @@ Repo for pcb layouts, gerber and gcode files
 * 2 passes with 0.1 overlap
 
 ### Cutout generation:
-* Current cutout mill depth to test: 1.5 mm
-* Current feedrate on cutout milling to test: 30 mm/s
+* Current cutout mill depth: 1.6 mm
+* Current feedrate on cutout milling: 40 mm/s
 * spindle speed 12000 rpm
 
 ### FlatCam defaults:
