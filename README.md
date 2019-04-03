@@ -21,7 +21,7 @@ Repo for pcb layouts, gerber and gcode files
 * TODO: test double sided layout by mirroring around center axis!
 
 ### Isolation generation:
-* Current isolation mill depth to test: 0.15 mm
+* Current isolation mill depth to test: 0.15 mm (Common copper depth is about 0.3 mm!! This needs to be tested)
 * Current feedrate on isolation milling to test: 60 mm/s
 * spindle speed 12000 rpm
 
