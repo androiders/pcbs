@@ -16,7 +16,7 @@ Repo for pcb layouts, gerber and gcode files
 ## FlatCam
 
 ### geometry generation:
-* mirror around y axis for both geometry and Drilling
+* If you are using thru-hole components or using bottom layer, mirror around y axis for both geometry and Drilling
 * Edit drill files if necessary for fewer drill sizes
 * TODO: test double sided layout by mirroring around center axis!
 
