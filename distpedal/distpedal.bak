@@ -450,7 +450,7 @@ U 1 1 5BFB6A02
 P 5400 1950
 F 0 "J3" H 5506 2128 50  0000 C CNN
 F 1 "9vin" H 5506 2037 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 5400 1950 50  0001 C CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 5400 1950 50  0001 C CNN
 F 3 "~" H 5400 1950 50  0001 C CNN
 	1    5400 1950
 	1    0    0    -1  
@@ -461,7 +461,7 @@ U 1 1 5BFB6D9E
 P 5400 2150
 F 0 "J4" H 5506 2328 50  0000 C CNN
 F 1 "gnd in" H 5506 2237 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 5400 2150 50  0001 C CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 5400 2150 50  0001 C CNN
 F 3 "~" H 5400 2150 50  0001 C CNN
 	1    5400 2150
 	1    0    0    -1  
@@ -515,7 +515,7 @@ U 1 1 5BFC9401
 P 8000 3950
 F 0 "J8" H 7972 3880 50  0000 R CNN
 F 1 "Outsleve" H 7972 3971 50  0000 R CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 8000 3950 50  0001 C CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 8000 3950 50  0001 C CNN
 F 3 "~" H 8000 3950 50  0001 C CNN
 	1    8000 3950
 	-1   0    0    1   
@@ -526,7 +526,7 @@ U 1 1 5BFC9475
 P 8000 3850
 F 0 "J7" H 7973 3780 50  0000 R CNN
 F 1 "Outtip" H 7973 3871 50  0000 R CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 8000 3850 50  0001 C CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 8000 3850 50  0001 C CNN
 F 3 "~" H 8000 3850 50  0001 C CNN
 	1    8000 3850
 	-1   0    0    1   
@@ -552,7 +552,7 @@ U 1 1 5BFCF466
 P 7250 2550
 F 0 "J5" H 7223 2480 50  0000 R CNN
 F 1 "Led+" H 7223 2571 50  0000 R CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 7250 2550 50  0001 C CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 7250 2550 50  0001 C CNN
 F 3 "~" H 7250 2550 50  0001 C CNN
 	1    7250 2550
 	-1   0    0    1   
@@ -563,7 +563,7 @@ U 1 1 5BFCF55C
 P 7250 2750
 F 0 "J6" H 7223 2680 50  0000 R CNN
 F 1 "Led-" H 7223 2771 50  0000 R CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 7250 2750 50  0001 C CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 7250 2750 50  0001 C CNN
 F 3 "~" H 7250 2750 50  0001 C CNN
 	1    7250 2750
 	-1   0    0    1   
