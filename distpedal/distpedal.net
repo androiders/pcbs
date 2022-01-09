@@ -1,8 +1,8 @@
 (export (version D)
   (design
     (source /home/androiders/workspace/pcbs/distpedal/distpedal.sch)
-    (date "Mon 26 Nov 2018 09:36:36 PM CET")
-    (tool "Eeschema 5.0.1-33cea8e~68~ubuntu18.04.1")
+    (date "Wed 27 Mar 2019 06:30:37 PM CET")
+    (tool "Eeschema 5.0.2-bee76a0~70~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)

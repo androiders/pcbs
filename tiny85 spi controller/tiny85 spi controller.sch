@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:tiny85 spi controller-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -41,7 +42,7 @@ U 1 1 5BDA0BD7
 P 7350 1900
 F 0 "J3" H 7400 2217 50  0000 C CNN
 F 1 "ISP" H 7400 2126 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 7350 1900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 7350 1900 50  0001 C CNN
 F 3 "~" H 7350 1900 50  0001 C CNN
 	1    7350 1900
 	1    0    0    -1  

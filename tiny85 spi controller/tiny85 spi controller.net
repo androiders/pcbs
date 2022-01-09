@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source "/home/androiders/workspace/pcbs/micpreamp/tiny85 spi controller/tiny85 spi controller.sch")
-    (date "Wed 31 Oct 2018 10:56:09 PM CET")
+    (source "/home/androiders/workspace/pcbs/tiny85 spi controller/tiny85 spi controller.sch")
+    (date "Sat 10 Nov 2018 11:42:29 AM CET")
     (tool "Eeschema 5.0.1-33cea8e~68~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -31,7 +31,7 @@
       (tstamp 5BDA078C))
     (comp (ref J3)
       (value ISP)
-      (footprint Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical)
+      (footprint Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical)
       (datasheet ~)
       (libsource (lib Connector_Generic) (part Conn_02x03_Odd_Even) (description "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))

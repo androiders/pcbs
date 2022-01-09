@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:tiny85 spi controller-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -41,7 +42,7 @@ U 1 1 5BDA0BD7
 P 7350 1900
 F 0 "J3" H 7400 2217 50  0000 C CNN
 F 1 "ISP" H 7400 2126 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 7350 1900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x03_P2.00mm_Vertical" H 7350 1900 50  0001 C CNN
 F 3 "~" H 7350 1900 50  0001 C CNN
 	1    7350 1900
 	1    0    0    -1  
@@ -293,21 +294,6 @@ Wire Wire Line
 Connection ~ 7050 1550
 Wire Wire Line
 	7050 1550 5950 1550
-Wire Wire Line
-	4600 1900 4600 2050
-$Comp
-L power:GNDPWR #PWR0101
-U 1 1 5BDCC93C
-P 4400 2050
-F 0 "#PWR0101" H 4400 1850 50  0001 C CNN
-F 1 "GNDPWR" H 4404 1896 50  0000 C CNN
-F 2 "" H 4400 2000 50  0001 C CNN
-F 3 "" H 4400 2000 50  0001 C CNN
-	1    4400 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 2050 4600 2050
 $Comp
 L power:GND #PWR0103
 U 1 1 5BDCE722
@@ -327,7 +313,6 @@ Connection ~ 4600 1900
 Wire Wire Line
 	4600 2400 4600 2200
 Connection ~ 4600 2400
-Connection ~ 4600 2050
 $Comp
 L power:GND #PWR0104
 U 1 1 5BDD629D
@@ -351,11 +336,11 @@ Wire Wire Line
 	7650 2200 7650 2300
 Connection ~ 4600 2200
 Wire Wire Line
-	4600 2200 4600 2050
-Wire Wire Line
 	7550 2800 7550 2700
 Wire Wire Line
 	7550 2700 7650 2700
 Wire Wire Line
 	7650 2300 8200 2300
+Wire Wire Line
+	4600 1900 4600 2200
 $EndSCHEMATC

@@ -1,0 +1,158 @@
+
+(rules PCB numitron clock
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 15)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.3)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.4)
+    )
+  )
+  (rule
+    (width 200.0)
+    (clear 200.0)
+    (clear 400.0 (type smd_to_turn_gap))
+    (clear 300.2 (type default_"kicad_default"))
+    (clear 400.2 (type default_"my))
+    (clear 300.2 (type default_cnc"))
+    (clear 300.2 (type default_"wide))
+    (clear 75.0 (type smd_smd))
+    (clear 300.2 (type smd_"kicad_default"))
+    (clear 400.2 (type smd_"my))
+    (clear 300.2 (type smd_cnc"))
+    (clear 300.2 (type smd_"wide))
+    (clear 300.2 (type "kicad_default"_"kicad_default"))
+    (clear 400.2 (type "kicad_default"_"my))
+    (clear 300.2 (type "kicad_default"_cnc"))
+    (clear 300.2 (type "kicad_default"_"wide))
+    (clear 400.2 (type "my_cnc"))
+    (clear 400.2 (type "my_"wide))
+    (clear 300.2 (type cnc"_cnc"))
+    (clear 400.2 (type cnc"_"wide))
+  )
+  (padstack "Via[0-1]_400:300_um"
+    (shape
+      (circle F.Cu 400.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 400.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_1000:500_um"
+    (shape
+      (circle F.Cu 1000.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1000.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_400:300_um" "Via[0-1]_400:300_um" default
+  )
+  (via 
+    "Via[0-1]_400:300_um-kicad_default" "Via[0-1]_400:300_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_1000:500_um" "Via[0-1]_1000:500_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1000:500_um-kicad_default" "Via[0-1]_1000:500_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-my cnc" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_1000:500_um-my cnc" "Via[0-1]_1000:500_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-wide default" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_1000:500_um-wide default" "Via[0-1]_1000:500_um" default
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    "my cnc" "Via[0-1]_1000:500_um-my cnc"
+  )
+  (via_rule
+    "wide default" "Via[0-1]_800:400_um-wide default"
+  )
+  (class default
+    VCC RST "Net-(U1-Pad4)" "Net-(U1-Pad14)" "Net-(U1-Pad5)" "Net-(U1-Pad6)" "Net-(U1-Pad16)" "Net-(U1-Pad7)"
+    "Net-(U1-Pad17)" "Net-(SW2-Pad1)" SRCK "Net-(SW3-Pad1)" "unconnected-(U3-Pad18)" "unconnected-(U5-Pad22)" "Net-(U10-Pad2)" "Net-(U10-Pad9)"
+    "Net-(U10-Pad8)" "Net-(U10-Pad7)" "Net-(U10-Pad3)" "Net-(U10-Pad4)" "Net-(U10-Pad5)" "Net-(U10-Pad6)" "Net-(U12-Pad6)" "Net-(U12-Pad5)"
+    "Net-(U12-Pad4)" "Net-(U12-Pad3)" "Net-(U12-Pad7)" "Net-(U12-Pad8)" "Net-(U12-Pad9)" "Net-(U12-Pad2)" MOSI MISO
+    SCK GNDREF "Net-(C2-Pad2)" "Net-(C1-Pad2)" G4 SD4 G3 SD3
+    G2 SD2 RCLK G1 SRCLR SD1 "Net-(U4-Pad4)" "Net-(U4-Pad5)"
+    "Net-(U4-Pad6)" "Net-(U4-Pad7)" "Net-(U4-Pad14)" "Net-(U4-Pad15)" "Net-(U4-Pad16)" "Net-(U4-Pad17)" "unconnected-(U4-Pad18)" "unconnected-(U1-Pad18)"
+    "unconnected-(U2-Pad18)" "Net-(U22-Pad9)" "Net-(D1-Pad2)" "unconnected-(U5-Pad19)" "Net-(J2-Pad4)" "Net-(J2-Pad3)" "unconnected-(J2-Pad2)" D1
+    D2 "Net-(D2-Pad2)"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 800.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "my cnc"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 800.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
