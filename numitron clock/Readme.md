@@ -1,5 +1,5 @@
 TODO:
-* Fixas banorna
+* Fixa banorna
 * Fixa annotations 
     * labels i komponenter
     * rätt nummer
@@ -9,3 +9,5 @@ TODO:
 * värden (resistans) samma på r1,r2,r3?
 * Rotera numitron rör 180 grader
 * ta bort j2?
+
+Bonus: Göra SMD version av PCB
